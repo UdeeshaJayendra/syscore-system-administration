@@ -34,3 +34,18 @@ Default policies:
 SSH access was explicitly allowed on TCP port 22 for IPv4 and IPv6.
 
 SSH connectivity was tested again after enabling UFW, confirming that the firewall did not block SSH access.
+
+## Network Interface Administration
+
+Network interfaces were inspected using:
+
+```bash
+ip -br addr
+ip -br link
+
+## Network Ports and Services
+
+Listening network ports were inspected using:
+
+```bash
+sudo ss -lntp
