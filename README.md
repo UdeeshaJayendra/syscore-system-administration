@@ -18,55 +18,10 @@ The project was intentionally developed from the fundamentals upward:
 
 <img width="1408" height="768" alt="g" src="https://github.com/user-attachments/assets/aba14fb6-c140-452d-90ae-906ba76d9f2a" />
 
-```text
-Linux Administration
-        ↓
-Networking
-        ↓
-Services
-        ↓
-Storage
-        ↓
-Security
-        ↓
-Backups
-        ↓
-Automation
-        ↓
-Monitoring
-        ↓
-Troubleshooting
-        ↓
-Ansible
-        ↓
-Terraform
-        ↓
-AWS
-```
 
 Each area contains practical tasks, verification, troubleshooting, automation, and documentation.
 
 ---
-
-# Project Goals
-
-SysCore was built to demonstrate practical ability to:
-
-* Administer Ubuntu/Linux systems
-* Manage users, groups, permissions, and privileges
-* Understand and troubleshoot TCP/IP networking
-* Configure and manage Linux services
-* Administer storage and filesystems
-* Apply Linux security controls
-* Create and verify backups
-* Automate repetitive administration tasks
-* Monitor system health and services
-* Diagnose failures and perform recovery
-* Automate administration with Ansible
-* Manage secrets with Ansible Vault
-* Provision infrastructure using Terraform
-* Apply cloud infrastructure and security concepts with AWS
-* Use Git and GitHub for version-controlled infrastructure work
 
 ---
 
@@ -138,27 +93,14 @@ The Linux administration section covers:
 
 Examples of administrative concepts practiced:
 
-```text
-Users
- ↓
-Groups
- ↓
-Privileges
- ↓
-Permissions
- ↓
-Processes
- ↓
-System Administration
-```
 
 ## Evidence
 
-![User Group Sudo Administration](./docs/screenshots/01-syscore-user-group-sudo-administration.png)
+<img width="692" height="116" alt="01-syscore-user-group-sudo-administration" src="https://github.com/user-attachments/assets/0f10f76d-5153-4c66-85e3-dadd0a4120cf" />
 
-![File Permissions](./docs/screenshots/12-syscore-file-permissions-security.png)
+<img width="799" height="206" alt="02 syscore-ufw-firewall-ssh-rule" src="https://github.com/user-attachments/assets/d6c2096b-ed68-4a2a-bd16-97a3322fa4b7" />
 
-![User Group Security Audit](./docs/screenshots/13-syscore-user-group-security-audit.png)
+<img width="1487" height="397" alt="3 syscore-ssh-key-authentication" src="https://github.com/user-attachments/assets/58c972e4-e1ad-435d-a577-cf60e18b53b3" />
 
 ---
 
@@ -186,29 +128,16 @@ The project used command-line tools to inspect and verify network behavior rathe
 
 ## Networking Workflow
 
-```text
-Inspect Interface
-      ↓
-Check Addressing
-      ↓
-Check Routing
-      ↓
-Check Ports
-      ↓
-Test Connectivity
-      ↓
-Investigate DNS
-```
 
 ## Evidence
 
-![Network Port Service Analysis](./docs/screenshots/06-syscore-network-port-service-analysis.png)
+<img width="1680" height="636" alt="06 syscore-network-port-service-analysis" src="https://github.com/user-attachments/assets/405acfd1-7d38-4d70-bc5f-da2c30b8d9d5" />
 
-![Linux Routing Table Analysis](./docs/screenshots/07-syscore-linux-routing-table-analysis.png)
+<img width="731" height="154" alt="07-syscore-linux-routing-table-analysis" src="https://github.com/user-attachments/assets/463877d7-d3dc-4383-b6c2-e2a73bb5c73d" />
 
-![Network Connectivity Tests](./docs/screenshots/09-syscore-network-connectivity-tests.png)
+<img width="847" height="547" alt="09-syscore-network-connectivity-tests" src="https://github.com/user-attachments/assets/a652e1e1-9e36-4f45-b995-a566ee94a546" />
 
-![DNS Resolution Recovery](./docs/screenshots/30-syscore-troubleshooting-dns-resolution-recovery.png)
+<img width="935" height="924" alt="30-syscore-troubleshooting-dns-resolution-recovery" src="https://github.com/user-attachments/assets/fdb499fd-d667-4480-aa49-f406e78e50ee" />
 
 ---
 
@@ -235,35 +164,18 @@ Covered services and concepts include:
 
 The project also connects service administration with networking by verifying which ports services are listening on.
 
-## Service Lifecycle
-
-```text
-Install
-  ↓
-Configure
-  ↓
-Start
-  ↓
-Verify
-  ↓
-Monitor
-  ↓
-Troubleshoot
-  ↓
-Recover
-```
 
 ## Evidence
 
-![Nginx Virtual Host](./docs/screenshots/03-syscore-nginx-virtual-host-working.png)
+<img width="799" height="231" alt="3 syscore-nginx-virtual-host-working" src="https://github.com/user-attachments/assets/c7349f95-8ba4-4188-8e44-8fdbd8ed81a9" />
 
-![SSH Key Authentication](./docs/screenshots/04-syscore-ssh-key-authentication.png)
+<img width="1487" height="397" alt="3 syscore-ssh-key-authentication" src="https://github.com/user-attachments/assets/4414c800-f211-4275-99a5-166706a2ed52" />
 
-![SSH Local Login Success](./docs/screenshots/05-syscore-ssh-local-login-success.png)
+<img width="797" height="331" alt="4 syscore-ssh-local-login-success" src="https://github.com/user-attachments/assets/3895a626-a7b1-49c3-9a42-273e18389985" />
 
-![systemd Service Failure](./docs/screenshots/33-syscore-troubleshooting-systemd-service-failure.png)
+<img width="1448" height="619" alt="33-syscore-troubleshooting-systemd-service-failure" src="https://github.com/user-attachments/assets/bde946bc-0c50-4caf-9304-1738f207fb6b" />
 
-![systemd Service Recovery](./docs/screenshots/34-syscore-troubleshooting-systemd-service-recovery.png)
+<img width="1087" height="206" alt="34-syscore-troubleshooting-systemd-service-recovery" src="https://github.com/user-attachments/assets/7a8b5d73-d354-4709-9cd5-e151c9f1c9ad" />
 
 ---
 
@@ -284,31 +196,16 @@ The project covers:
 * Read-only filesystem troubleshooting
 * Storage-related recovery
 
-Typical investigation:
-
-```text
-Check Disk Usage
-      ↓
-Identify Problem Filesystem
-      ↓
-Inspect Mount
-      ↓
-Investigate Cause
-      ↓
-Apply Recovery
-      ↓
-Verify Filesystem
-```
 
 ## Evidence
 
-![Storage Filesystem Analysis](./docs/screenshots/10-syscore-storage-filesystem-analysis.png)
+<img width="902" height="825" alt="10-syscore-storage-filesystem-analysis" src="https://github.com/user-attachments/assets/a9836d2f-e699-4474-9d83-29a4447820eb" />
 
-![Disk Space Investigation](./docs/screenshots/24-syscore-troubleshooting-disk-space-investigation.png)
+<img width="1029" height="190" alt="24-syscore-troubleshooting-disk-space-investigation" src="https://github.com/user-attachments/assets/fd3d8305-cfe8-44ec-9bed-72535c6a1735" />
 
-![Read-only Filesystem Failure](./docs/screenshots/40-syscore-troubleshooting-readonly-filesystem-failure.png)
+<img width="1221" height="250" alt="40-syscore-troubleshooting-readonly-filesystem-failure" src="https://github.com/user-attachments/assets/2af9e81c-db66-4e11-938a-d3232877aa22" />
 
-![Read-only Filesystem Recovery](./docs/screenshots/41-syscore-troubleshooting-readonly-filesystem-recovery.png)
+<img width="1008" height="205" alt="41-syscore-troubleshooting-readonly-filesystem-recovery" src="https://github.com/user-attachments/assets/5ea4c646-c781-4ba1-8441-957575bca2db" />
 
 ---
 
@@ -332,31 +229,16 @@ SysCore covers:
 * Least-privilege concepts
 * Security verification
 
-## Security Model
-
-```text
-Identity
-   ↓
-Authentication
-   ↓
-Authorization
-   ↓
-Permissions
-   ↓
-Firewall
-   ↓
-Auditing
-```
 
 ## Evidence
 
-![UFW Firewall SSH Rule](./docs/screenshots/02-syscore-ufw-firewall-ssh-rule.png)
+<img width="799" height="206" alt="02 syscore-ufw-firewall-ssh-rule" src="https://github.com/user-attachments/assets/869bcf9c-18e2-453e-aedf-ab4fe3cc58d4" />
 
-![File Permissions Security](./docs/screenshots/12-syscore-file-permissions-security.png)
+<img width="1021" height="256" alt="12-syscore-file-permissions-security" src="https://github.com/user-attachments/assets/c4ea6466-9bcb-47e6-8ace-a9eaf5fff23e" />
 
-![User Group Security Audit](./docs/screenshots/13-syscore-user-group-security-audit.png)
+<img width="1135" height="222" alt="13-syscore-user-group-security-audit" src="https://github.com/user-attachments/assets/2fcfafa9-dc6e-433a-8ae9-7d86aa9f4344" />
 
-![Authentication Audit](./docs/screenshots/14-syscore-security-authentication-audit.png)
+<img width="1522" height="362" alt="14-syscore-security-authentication-audit" src="https://github.com/user-attachments/assets/57c36083-c7db-4866-8d06-b342d45642ee" />
 
 ---
 
@@ -378,29 +260,14 @@ The backup section demonstrates:
 * Restore operations
 * Recovery validation
 
-## Backup Workflow
-
-```text
-Source Data
-    ↓
-Backup Script
-    ↓
-Backup Archive
-    ↓
-Verification
-    ↓
-Restore
-    ↓
-Recovery Verification
-```
 
 The project does not treat a backup as successful merely because a file was created. Restore verification is included to confirm recoverability.
 
 ## Evidence
 
-![Backup Restore Verification](./docs/screenshots/15-syscore-backup-restore-verification.png)
+<img width="1143" height="332" alt="15-syscore-backup-restore-verification" src="https://github.com/user-attachments/assets/32d63feb-b099-4362-ab01-5f0e2bf45d8a" />
 
-![Automated Backup Script](./docs/screenshots/17-syscore-automated-backup-script.png)
+<img width="924" height="658" alt="17-syscore-automated-backup-script" src="https://github.com/user-attachments/assets/e9bf4795-9c68-45f6-9e29-90c73aa1fc21" />
 
 ---
 
@@ -422,19 +289,6 @@ Automation tasks include:
 * Backup automation
 * Repeatable administrative tasks
 
-Example progression:
-
-```text
-Manual Command
-      ↓
-Repeated Task
-      ↓
-Bash Script
-      ↓
-Repeatable Operation
-      ↓
-Automation
-```
 
 ## Bash Administration
 
@@ -442,9 +296,9 @@ The scripts were designed around common administrative tasks rather than purely 
 
 ## Evidence
 
-![System Information Script](./docs/screenshots/16-syscore-bash-system-information-script.png)
+<img width="924" height="317" alt="16-syscore-bash-system-information-script" src="https://github.com/user-attachments/assets/26945a65-4ed2-4f7d-ae49-404c1ba9f6b6" />
 
-![Automated Backup Script](./docs/screenshots/17-syscore-automated-backup-script.png)
+<img width="924" height="658" alt="17-syscore-automated-backup-script" src="https://github.com/user-attachments/assets/c5808b7e-da70-4b6d-abff-2e082ba5cf2e" />
 
 ---
 
@@ -469,31 +323,16 @@ Monitoring concepts include:
 
 The project uses command-line tools and custom scripts to collect operational information.
 
-## Monitoring Workflow
-
-```text
-Collect Metrics
-      ↓
-Inspect System State
-      ↓
-Detect Abnormal Condition
-      ↓
-Investigate
-      ↓
-Take Action
-      ↓
-Verify
-```
 
 Monitoring is also connected to the troubleshooting section, where resource and service information is used to diagnose failures.
 
 ## Supporting Evidence
 
-![Disk Space Investigation](./docs/screenshots/24-syscore-troubleshooting-disk-space-investigation.png)
+<img width="1029" height="190" alt="24-syscore-troubleshooting-disk-space-investigation" src="https://github.com/user-attachments/assets/ad867f5f-d2e4-4471-931c-b67e96c7a508" />
 
-![High CPU Process](./docs/screenshots/35-syscore-troubleshooting-high-cpu-process.png)
+<img width="838" height="135" alt="35-syscore-troubleshooting-high-cpu-process" src="https://github.com/user-attachments/assets/48ebef34-6de1-4b01-8273-88cfd1c02ffd" />
 
-![High CPU Process Recovery](./docs/screenshots/36-syscore-troubleshooting-high-cpu-process-recovery.png)
+<img width="669" height="77" alt="36-syscore-troubleshooting-high-cpu-process-recovery" src="https://github.com/user-attachments/assets/a04ca682-c56f-461f-807d-284b72a68ce5" />
 
 ---
 
@@ -511,73 +350,59 @@ The project includes:
 
 ### Nginx Failure
 
-![Nginx Failure](./docs/screenshots/20-syscore-troubleshooting-nginx-failure.png)
+<img width="792" height="119" alt="20-syscore-troubleshooting-nginx-failure" src="https://github.com/user-attachments/assets/e609b2d6-9cb1-45f6-b2c7-c51ddebb5013" />
 
-![Nginx Recovery](./docs/screenshots/21-syscore-troubleshooting-nginx-recovery.png)
+<img width="1122" height="357" alt="21-syscore-troubleshooting-nginx-recovery" src="https://github.com/user-attachments/assets/38863e1f-7866-4b0a-9ef1-e65600253b9c" />
 
 ### Disk Space
 
-![Disk Space](./docs/screenshots/24-syscore-troubleshooting-disk-space-investigation.png)
+<img width="1029" height="190" alt="24-syscore-troubleshooting-disk-space-investigation" src="https://github.com/user-attachments/assets/6d3c1d02-6418-45a6-b05d-dd7d8d8755bc" />
 
 ### SSH Failure
 
-![SSH Failure](./docs/screenshots/25-syscore-troubleshooting-ssh-service-failure.png)
+<img width="776" height="117" alt="25-syscore-troubleshooting-ssh-service-failure" src="https://github.com/user-attachments/assets/ee62171a-2c9e-4004-b265-329ab76d8612" />
 
-![SSH Recovery](./docs/screenshots/26-syscore-troubleshooting-ssh-service-recovery.png)
+<img width="941" height="175" alt="26-syscore-troubleshooting-ssh-service-recovery" src="https://github.com/user-attachments/assets/85157f6a-7eda-4e55-85ac-69330e8e74e1" />
 
 ### Permission Failure
 
-![Permission Failure](./docs/screenshots/27-syscore-troubleshooting-permission-failure.png)
+<img width="1298" height="153" alt="27-syscore-troubleshooting-permission-failure" src="https://github.com/user-attachments/assets/77719fea-688f-4344-ad80-720d27823e52" />
 
-![Permission Recovery](./docs/screenshots/28-syscore-troubleshooting-permission-recovery.png)
+<img width="1298" height="419" alt="28-syscore-troubleshooting-permission-recovery" src="https://github.com/user-attachments/assets/ccc747dc-1410-48af-bd5d-5d5d8a98302b" />
 
 ### DNS Failure
 
-![DNS Failure](./docs/screenshots/29-syscore-troubleshooting-dns-resolution-failure.png)
+<img width="794" height="262" alt="29-syscore-troubleshooting-dns-resolution-failure" src="https://github.com/user-attachments/assets/d3c5d1c5-3073-4195-8559-4271348c0c78" />
 
-![DNS Recovery](./docs/screenshots/30-syscore-troubleshooting-dns-resolution-recovery.png)
+<img width="935" height="924" alt="30-syscore-troubleshooting-dns-resolution-recovery" src="https://github.com/user-attachments/assets/ad120866-9bfb-4e98-9eca-60de7da69049" />
 
 ### Port Conflict
 
-![Port Conflict](./docs/screenshots/31-syscore-troubleshooting-port-conflict.png)
+<img width="1038" height="731" alt="31-syscore-troubleshooting-port-conflict" src="https://github.com/user-attachments/assets/10529d8a-da7a-4eb9-af50-8aeddeabada9" />
 
-![Port Conflict Recovery](./docs/screenshots/32-syscore-troubleshooting-port-conflict-recovery.png)
+<img width="1038" height="343" alt="32-syscore-troubleshooting-port-conflict-recovery" src="https://github.com/user-attachments/assets/c5f5d762-ff19-4d48-aae1-912eddb7bda7" />
 
 ### systemd Failure
 
-![systemd Failure](./docs/screenshots/33-syscore-troubleshooting-systemd-service-failure.png)
+<img width="1448" height="619" alt="33-syscore-troubleshooting-systemd-service-failure" src="https://github.com/user-attachments/assets/4a7ae504-d2e2-48d2-9fa9-934e8ff407e9" />
 
-![systemd Recovery](./docs/screenshots/34-syscore-troubleshooting-systemd-service-recovery.png)
+<img width="1087" height="206" alt="34-syscore-troubleshooting-systemd-service-recovery" src="https://github.com/user-attachments/assets/08198c61-fc78-4130-b588-06aba4f24d68" />
 
 ### High CPU Process
 
-![High CPU](./docs/screenshots/35-syscore-troubleshooting-high-cpu-process.png)
+<img width="838" height="135" alt="35-syscore-troubleshooting-high-cpu-process" src="https://github.com/user-attachments/assets/9538448c-0d39-45a7-bf97-b835258ee812" />
 
-![High CPU Recovery](./docs/screenshots/36-syscore-troubleshooting-high-cpu-process-recovery.png)
+<img width="669" height="77" alt="36-syscore-troubleshooting-high-cpu-process-recovery" src="https://github.com/user-attachments/assets/1c65d346-6acc-48f1-9b76-e50c73156df3" />
 
 ### Read-only Filesystem
 
-![Filesystem Failure](./docs/screenshots/40-syscore-troubleshooting-readonly-filesystem-failure.png)
+<img width="1221" height="250" alt="40-syscore-troubleshooting-readonly-filesystem-failure" src="https://github.com/user-attachments/assets/cbe0a9f6-c5bf-4dce-b246-3e15a2d00bbe" />
 
-![Filesystem Recovery](./docs/screenshots/41-syscore-troubleshooting-readonly-filesystem-recovery.png)
+<img width="1008" height="205" alt="41-syscore-troubleshooting-readonly-filesystem-recovery" src="https://github.com/user-attachments/assets/94a139b0-6025-4e4e-9a3c-7557f47bfbbb" />
 
 ## Troubleshooting Method
 
 Every failure follows the same operational approach:
-
-```text
-Detect
-  ↓
-Collect Evidence
-  ↓
-Identify Root Cause
-  ↓
-Apply Corrective Action
-  ↓
-Verify Recovery
-  ↓
-Document
-```
 
 ---
 
@@ -609,37 +434,37 @@ The Ansible section covers:
 
 ## Configuration Management
 
-![Ansible First Playbook](./docs/screenshots/43-syscore-ansible-first-playbook-execution.png)
+<img width="1915" height="542" alt="43-syscore-ansible-first-playbook-execution" src="https://github.com/user-attachments/assets/8f19e000-ef2a-4ec4-b411-71e51d149162" />
 
-![Configuration Management](./docs/screenshots/44-syscore-ansible-configuration-management-idempotency.png)
+<img width="1915" height="785" alt="44-syscore-ansible-configuration-management-idempotency" src="https://github.com/user-attachments/assets/4bdd40a1-a0aa-4675-ae93-5976ca324396" />
 
 ## Service and Package Management
 
-![Ansible Service Management](./docs/screenshots/45-syscore-ansible-service-management.png)
+<img width="1915" height="417" alt="45-syscore-ansible-service-management" src="https://github.com/user-attachments/assets/f5ff75de-14b1-478a-a28b-f94d772e6328" />
 
 ## File Permissions
 
-![Ansible File Permissions](./docs/screenshots/46-syscore-ansible-file-permissions-management.png)
+<img width="1917" height="402" alt="46-syscore-ansible-file-permissions-management" src="https://github.com/user-attachments/assets/eff40dd6-8b59-441f-8985-511307b469c1" />
 
 ## Templates and Facts
 
-![Ansible Template](./docs/screenshots/48-syscore-ansible-template-configuration.png)
+<img width="1917" height="430" alt="48-syscore-ansible-template-configuration" src="https://github.com/user-attachments/assets/c3bff01a-90ef-4fc1-97d7-8f25a7afb85d" />
 
-![Variables and Facts](./docs/screenshots/49-syscore-ansible-variables-and-facts.png)
+<img width="1917" height="552" alt="49-syscore-ansible-variables-and-facts" src="https://github.com/user-attachments/assets/2b8bc6a5-6fd5-49ba-a53d-0650e519ce94" />
 
 ## Conditionals and Loops
 
-![Conditionals and Loops](./docs/screenshots/50-syscore-ansible-conditionals-and-loops.png)
+<img width="1917" height="530" alt="50-syscore-ansible-conditionals-and-loops" src="https://github.com/user-attachments/assets/41536634-4e77-4ff2-8115-698b4bd65cc6" />
 
 ## Secrets
 
-![Ansible Vault](./docs/screenshots/51-syscore-ansible-vault-secret-management.png)
+<img width="1917" height="608" alt="51-syscore-ansible-vault-secret-management" src="https://github.com/user-attachments/assets/2397e94c-e22c-4143-886e-437366820360" />
 
 Sensitive values were encrypted using Ansible Vault instead of being stored directly as plaintext.
 
 ## Integrated Automation
 
-![Integrated Ansible Automation](./docs/screenshots/52-syscore-ansible-integrated-automation.png)
+<img width="1917" height="621" alt="52-syscore-ansible-integrated-automation" src="https://github.com/user-attachments/assets/bff20abf-1eeb-4135-9e24-ec899e371e61" />
 
 The final Ansible exercise combined:
 
@@ -686,14 +511,6 @@ EC2 Instance Type
 ```
 
 This allows the configuration to be reused without changing the infrastructure logic.
-
-## Idempotency
-
-Terraform was executed after deployment and reported:
-
-```text
-No changes. Your infrastructure matches the configuration.
-```
 
 This verified that the actual infrastructure matched the declared Terraform configuration.
 
@@ -762,12 +579,10 @@ GitHub is used as the version-controlled project history and portfolio platform 
 Terraform-generated state and local Terraform working directories are excluded from version control.
 
 ---
----
 
 # Security Principles
 
 Security considerations were applied throughout the project rather than only in the security section.
-
 
 ```
 ```
