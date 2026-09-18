@@ -1,0 +1,10 @@
+---
+- name: Manage Linux packages
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Ensure tree package is installed
+      ansible.builtin.apt:
+        name: tree
+        state: present
