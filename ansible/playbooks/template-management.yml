@@ -1,0 +1,13 @@
+---
+- name: Manage SysCore configuration with a template
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Deploy SysCore configuration template
+      ansible.builtin.template:
+        src: ../templates/syscore.conf.j2
+        dest: /etc/syscore/syscore.conf
+        owner: root
+        group: root
+        mode: '0644'
