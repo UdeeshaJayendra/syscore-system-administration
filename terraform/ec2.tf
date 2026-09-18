@@ -8,6 +8,7 @@ resource "aws_instance" "syscore" {
   subnet_id                   = aws_subnet.public.id
   vpc_security_group_ids      = [aws_security_group.syscore.id]
   associate_public_ip_address = false
+  iam_instance_profile        = aws_iam_instance_profile.syscore_ec2.name
 
   credit_specification {
     cpu_credits = "standard"
