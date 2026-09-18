@@ -516,7 +516,7 @@ This verified that the actual infrastructure matched the declared Terraform conf
 
 ## Evidence
 
-![Terraform AWS Deployment](./docs/screenshots/53-cloud-terraform-applying.png)
+<img width="1112" height="441" alt="54-syscore-terraform-vpc-deployment" src="https://github.com/user-attachments/assets/5ca3f4a8-ddb8-4499-a925-9fc4673d24aa" />
 
 ---
 
