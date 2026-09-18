@@ -1,0 +1,12 @@
+---
+- name: Test Ansible Vault
+  hosts: local
+
+  tasks:
+    - name: Verify vault secret is loaded
+      ansible.builtin.assert:
+        that:
+          - syscore_lab_token is defined
+          - syscore_lab_token | length > 0
+        success_msg: "Vault secret loaded successfully"
+        fail_msg: "Vault secret was not loaded"
