@@ -1,0 +1,19 @@
+---
+- name: Manage SysCore configuration
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Create SysCore configuration directory
+      ansible.builtin.file:
+        path: /etc/syscore
+        state: directory
+        mode: '0755'
+
+    - name: Create SysCore configuration file
+      ansible.builtin.copy:
+        content: |
+          Managed by Ansible
+          Project: SysCore
+        dest: /etc/syscore/syscore.conf
+        mode: '0644'

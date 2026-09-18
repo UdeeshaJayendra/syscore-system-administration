@@ -1,0 +1,21 @@
+---
+- name: Collect Linux system information
+  hosts: local
+  gather_facts: true
+
+  tasks:
+    - name: Show hostname
+      ansible.builtin.debug:
+        var: ansible_hostname
+
+    - name: Show operating system
+      ansible.builtin.debug:
+        msg: "{{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+    - name: Show system uptime
+      ansible.builtin.command: uptime
+      register: uptime_result
+
+    - name: Display uptime
+      ansible.builtin.debug:
+        var: uptime_result.stdout
