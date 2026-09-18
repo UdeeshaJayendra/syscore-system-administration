@@ -1,0 +1,17 @@
+---
+- name: Demonstrate Ansible conditionals and loops
+  hosts: local
+
+  tasks:
+    - name: Show Ubuntu-specific message
+      ansible.builtin.debug:
+        msg: "This system is running Ubuntu"
+      when: ansible_distribution == "Ubuntu"
+
+    - name: Show managed directories
+      ansible.builtin.debug:
+        msg: "Managing directory: {{ item }}"
+      loop:
+        - /etc/syscore
+        - /var/log
+        - /tmp
