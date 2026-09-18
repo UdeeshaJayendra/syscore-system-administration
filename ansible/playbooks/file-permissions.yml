@@ -1,0 +1,14 @@
+---
+- name: Manage SysCore file permissions
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Create permissions test file
+      ansible.builtin.copy:
+        content: |
+          SysCore file permissions test
+        dest: /etc/syscore/permissions-test.conf
+        owner: root
+        group: sysops
+        mode: '0640'
