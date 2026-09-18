@@ -1,0 +1,23 @@
+---
+- name: Demonstrate Ansible variables and facts
+  hosts: local
+
+  vars:
+    lab_environment: lab
+    project_name: SysCore
+    administrator: udeesha
+
+  tasks:
+    - name: Show system information
+      ansible.builtin.debug:
+        msg:
+          - "Project: {{ project_name }}"
+          - "Environment: {{lab_environment }}"
+          - "Administrator: {{ administrator }}"
+          - "Hostname: {{ ansible_hostname }}"
+          - "OS: {{ ansible_distribution }} {{ ansible_distribution_version }}"
+          - "Architecture: {{ ansible_architecture }}"
+
+    - name: Show memory information
+      ansible.builtin.debug:
+        msg: "Total RAM: {{ ansible_memtotal_mb }} MB"
