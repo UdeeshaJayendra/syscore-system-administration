@@ -1,0 +1,24 @@
+---
+- name: SysCore integrated automation
+  hosts: local
+  become: true
+
+  vars:
+    project_name: SysCore
+    lab_environment: lab
+
+  tasks:
+    - name: Deploy system profile on Ubuntu
+      ansible.builtin.template:
+        src: ../templates/system-profile.conf.j2
+        dest: /etc/syscore/system-profile.conf
+        owner: root
+        group: root
+        mode: '0644'
+      when: ansible_distribution == "Ubuntu"
+      notify: System profile updated
+
+  handlers:
+    - name: System profile updated
+      ansible.builtin.debug:
+        msg: "SysCore system profile was updated"
