@@ -1,0 +1,11 @@
+---
+- name: Remove SysCore test user
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Remove SysCore test user
+      ansible.builtin.user:
+        name: syscorebot
+        state: absent
+        remove: true
