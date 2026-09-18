@@ -1,0 +1,11 @@
+---
+- name: Manage SSH service
+  hosts: local
+  become: true
+
+  tasks:
+    - name: Ensure SSH service is running and enabled
+      ansible.builtin.service:
+        name: ssh
+        state: started
+        enabled: true
